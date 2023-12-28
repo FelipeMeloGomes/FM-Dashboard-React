@@ -78,7 +78,7 @@ const Sidebar = ({ children }) => {
                         justifyContent="center"
                     >
                         <Typography variant="h4" color={colors.grey[100]}>
-                            Crax.AI
+                            Fm.AI
                         </Typography>
                     </Box>
                     <Divider />
