@@ -178,7 +178,7 @@ const Dashboard = () => {
                             <Card sx={{ height: 60 + "vh" }}>
                                 <CardContent>
                                     <Box>
-                                        <Typography>
+                                        <Typography fontWeight="bold">
                                             Produtos Populares
                                         </Typography>
                                     </Box>
