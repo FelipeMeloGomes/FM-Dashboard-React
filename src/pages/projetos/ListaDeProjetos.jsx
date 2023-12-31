@@ -29,7 +29,7 @@ const ListaDeProjetos = () => {
         const fetchData = async () => {
             try {
                 const response = await Axios.get(
-                    "https://jsonplaceholder.typicode.com/comments"
+                    "https://jsonplaceholder.typicode.com/users"
                 );
                 setData(response.data);
                 setIsLoading(false);
@@ -43,9 +43,13 @@ const ListaDeProjetos = () => {
 
     const columns = [
         { field: "id" },
-        { field: "postId" },
+
         {
             field: "name",
+            flex: 1,
+        },
+        {
+            field: "username",
             flex: 1,
         },
         {
@@ -53,8 +57,12 @@ const ListaDeProjetos = () => {
             flex: 1,
         },
         {
-            field: "body",
-            flex: 2,
+            field: "phone",
+            flex: 1,
+        },
+        {
+            field: "website",
+            flex: 1,
         },
     ];
 
