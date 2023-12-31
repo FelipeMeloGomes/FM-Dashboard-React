@@ -2,9 +2,11 @@
 import LayoutBaseDePagina from "../../layouts/LayoutBaseDePagina";
 import BasicAccordion from "../../components/accordion/BasicAccordion";
 
+// animations grapichs number
+import CountUp from "react-countup";
+
 // Grapichs
 import BarChart from "../../components/charts/BarChart";
-import GeoChart from "../../components/charts/GeoChart";
 
 // Material UI
 import {
@@ -58,7 +60,7 @@ const Dashboard = () => {
                     },
                 }}
             >
-                <Box sx={{ flexGrow: 1, p: 3 }}>
+                <Box sx={{ flexGrow: 1 }}>
                     <Grid container spacing={2}>
                         <Grid item xs={8}>
                             <Stack spacing={2} direction="row">
@@ -79,7 +81,12 @@ const Dashboard = () => {
                                             component="div"
                                             sx={{ color: "#fff" }}
                                         >
-                                            $500.00
+                                            $
+                                            <CountUp
+                                                delay={0.4}
+                                                end={500.0}
+                                                duration={0.6}
+                                            />
                                         </Typography>
                                         <Typography
                                             gutterBottom
@@ -109,7 +116,12 @@ const Dashboard = () => {
                                             component="div"
                                             sx={{ color: "#fff" }}
                                         >
-                                            $900.00
+                                            $
+                                            <CountUp
+                                                delay={0.4}
+                                                end={900.0}
+                                                duration={0.6}
+                                            />
                                         </Typography>
                                         <Typography
                                             gutterBottom
@@ -137,7 +149,12 @@ const Dashboard = () => {
                                             </Box>
                                             <Box sx={{ color: "#fff" }}>
                                                 <Typography fontWeight="bold">
-                                                    $900k
+                                                    $
+                                                    <CountUp
+                                                        delay={0.4}
+                                                        end={900}
+                                                        duration={0.6}
+                                                    />
                                                 </Typography>
                                                 <Typography>
                                                     Renda Total
@@ -158,7 +175,12 @@ const Dashboard = () => {
                                             </Box>
                                             <Box sx={{ color: "#fff" }}>
                                                 <Typography fontWeight="bold">
-                                                    $900k
+                                                    $
+                                                    <CountUp
+                                                        delay={0.4}
+                                                        end={900}
+                                                        duration={0.6}
+                                                    />
                                                 </Typography>
                                                 <Typography>
                                                     Renda Total
@@ -171,7 +193,7 @@ const Dashboard = () => {
                         </Grid>
                     </Grid>
                 </Box>
-                <Box sx={{ flexGrow: 1, p: 3 }}>
+                <Box sx={{ flexGrow: 1, p: 1 }}>
                     <Grid container spacing={2}>
                         <Grid item xs={8}>
                             <Card sx={{ height: 60 + "vh" }}>
