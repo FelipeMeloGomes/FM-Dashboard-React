@@ -2,6 +2,10 @@
 import LayoutBaseDePagina from "../../layouts/LayoutBaseDePagina";
 import BasicAccordion from "../../components/accordion/BasicAccordion";
 
+// Grapichs
+import BarChart from "../../components/charts/BarChart";
+import GeoChart from "../../components/charts/GeoChart";
+
 // Material UI
 import {
     Box,
@@ -171,13 +175,15 @@ const Dashboard = () => {
                     <Grid container spacing={2}>
                         <Grid item xs={8}>
                             <Card sx={{ height: 60 + "vh" }}>
-                                <CardContent></CardContent>
+                                <CardContent>
+                                    <BarChart />
+                                </CardContent>
                             </Card>
                         </Grid>
                         <Grid item xs={4}>
                             <Card sx={{ height: 60 + "vh" }}>
                                 <CardContent>
-                                    <Box>
+                                    <Box sx={{ p: 1 }}>
                                         <Typography fontWeight="bold">
                                             Produtos Populares
                                         </Typography>
