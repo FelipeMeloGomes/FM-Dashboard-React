@@ -10,33 +10,23 @@ import Sidebar from "./components/sidebar/Sidebar";
 
 // Context
 import DrawerProvider from "./context/DrawerContext";
-
-// Material UI
-import { CssBaseline, ThemeProvider } from "@mui/material";
-
-// Theme
-import { ColorModeContext, useMode } from "./theme/theme";
+import { AppThemeProvider } from "./context/ThemeContext";
 
 function App() {
-    const [theme, colorMode] = useMode();
-
     return (
-        <ColorModeContext.Provider value={colorMode}>
-            <ThemeProvider theme={theme}>
-                <DrawerProvider>
-                    <CssBaseline />
-                    <Sidebar>
-                        <Routes>
-                            <Route path="/" element={<Dashboard />} />
-                            <Route
-                                path="/ListaDeProjetos"
-                                element={<ListaDeProjetos />}
-                            />
-                        </Routes>
-                    </Sidebar>
-                </DrawerProvider>
-            </ThemeProvider>
-        </ColorModeContext.Provider>
+        <AppThemeProvider>
+            <DrawerProvider>
+                <Sidebar>
+                    <Routes>
+                        <Route path="/" element={<Dashboard />} />
+                        <Route
+                            path="/ListaDeProjetos"
+                            element={<ListaDeProjetos />}
+                        />
+                    </Routes>
+                </Sidebar>
+            </DrawerProvider>
+        </AppThemeProvider>
     );
 }
 

@@ -1,4 +1,5 @@
 import { Chart } from "react-google-charts";
+import { Typography } from "@mui/material";
 
 export const data = [
     ["Ano", "Vendas", "Despesas", "Lucro"],
@@ -12,12 +13,13 @@ export const data = [
     ["2021", 6000, 540, 3060],
     ["2022", 14000, 540, 40500],
     ["2023", 17000, 540, 4000],
+    ["2024", 17000, 540, 4000],
 ];
 
 export const options = {
     chart: {
         title: "Perfomance da empresa",
-        subtitle: "Vendas, despesas e lucro: 2014-2017",
+        subtitle: "Vendas, despesas e lucro: 2014-2024",
     },
     colors: ["#0000CD", "#FF0000", "#008000"],
 };

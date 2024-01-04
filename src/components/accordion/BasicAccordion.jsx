@@ -16,7 +16,7 @@ const BasicAccordion = () => {
                     aria-controls="panel1a-content"
                     id="panel1a-header"
                 >
-                    <Typography>Accordion 1</Typography>
+                    <Typography>Celular</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
@@ -32,7 +32,7 @@ const BasicAccordion = () => {
                     aria-controls="panel2a-content"
                     id="panel2a-header"
                 >
-                    <Typography>Accordion 2</Typography>
+                    <Typography>Notebook</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
@@ -48,7 +48,7 @@ const BasicAccordion = () => {
                     aria-controls="panel2a-content"
                     id="panel2a-header"
                 >
-                    <Typography>Accordion 3</Typography>
+                    <Typography>Computador</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>

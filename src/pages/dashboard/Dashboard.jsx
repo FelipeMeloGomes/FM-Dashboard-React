@@ -22,44 +22,12 @@ import StorefrontIcon from "@mui/icons-material/Storefront";
 import CreditCardIcon from "@mui/icons-material/CreditCard";
 import ShoppingBagIcon from "@mui/icons-material/ShoppingBag";
 
-// Theme
-import { tokens } from "../../theme/theme";
-
 const Dashboard = () => {
     const theme = useTheme();
-    const colors = tokens(theme.palette.mode);
 
     return (
-        <LayoutBaseDePagina titulo="Projetos">
-            <Box
-                m={1}
-                width="auto"
-                sx={{
-                    "& .MuiDataGrid-root": {
-                        border: "none",
-                    },
-                    "& .MuiDataGrid-cell": {
-                        borderBottom: "none",
-                    },
-                    "& .name-column--cell": {
-                        color: colors.greenAccent[300],
-                    },
-                    "& .MuiDataGrid-columnHeaders": {
-                        backgroundColor: colors.blueAccent[700],
-                        borderBottom: "none",
-                    },
-                    "& .MuiDataGrid-virtualScroller": {
-                        backgroundColor: colors.primary[400],
-                    },
-                    "& .MuiDataGrid-footerContainer": {
-                        borderTop: "none",
-                        backgroundColor: colors.blueAccent[700],
-                    },
-                    "& .MuiCheckbox-root": {
-                        color: `${colors.greenAccent[200]} !important`,
-                    },
-                }}
-            >
+        <LayoutBaseDePagina titulo="Gráficos da Empresa">
+            <Box m={1} width="auto">
                 <Box sx={{ flexGrow: 1 }}>
                     <Grid container spacing={2}>
                         <Grid item xs={8}>
@@ -84,7 +52,7 @@ const Dashboard = () => {
                                             $
                                             <CountUp
                                                 delay={0.4}
-                                                end={500.0}
+                                                end={50000000000}
                                                 duration={0.6}
                                             />
                                         </Typography>
@@ -119,7 +87,7 @@ const Dashboard = () => {
                                             $
                                             <CountUp
                                                 delay={0.4}
-                                                end={900.0}
+                                                end={10000000}
                                                 duration={0.6}
                                             />
                                         </Typography>
@@ -152,7 +120,7 @@ const Dashboard = () => {
                                                     $
                                                     <CountUp
                                                         delay={0.4}
-                                                        end={900}
+                                                        end={1000000}
                                                         duration={0.6}
                                                     />
                                                 </Typography>
@@ -178,7 +146,7 @@ const Dashboard = () => {
                                                     $
                                                     <CountUp
                                                         delay={0.4}
-                                                        end={900}
+                                                        end={5000000}
                                                         duration={0.6}
                                                     />
                                                 </Typography>
@@ -193,7 +161,7 @@ const Dashboard = () => {
                         </Grid>
                     </Grid>
                 </Box>
-                <Box sx={{ flexGrow: 1, p: 1 }}>
+                <Box sx={{ flexGrow: 1, py: 1 }}>
                     <Grid container spacing={2}>
                         <Grid item xs={8}>
                             <Card sx={{ height: 60 + "vh" }}>
@@ -205,7 +173,7 @@ const Dashboard = () => {
                         <Grid item xs={4}>
                             <Card sx={{ height: 60 + "vh" }}>
                                 <CardContent>
-                                    <Box sx={{ p: 1 }}>
+                                    <Box sx={{ py: 1 }}>
                                         <Typography fontWeight="bold">
                                             Produtos Populares
                                         </Typography>

@@ -12,15 +12,11 @@ import { MenuOutlined } from "@mui/icons-material";
 // Context
 import { useDrawerContext } from "../context/DrawerContext";
 
-// Theme
-import { tokens } from "./../theme/theme";
-
 const LayoutBaseDePagina = ({ children, titulo, barraDeFerramentas }) => {
     const theme = useTheme();
     const smDown = useMediaQuery(theme.breakpoints.down("sm"));
     const mdDown = useMediaQuery(theme.breakpoints.down("md"));
     const lgDown = useMediaQuery(theme.breakpoints.down("lg"));
-    const colors = tokens(theme.palette.mode);
     const { toggleDrawerOpen } = useDrawerContext();
 
     return (
@@ -45,7 +41,6 @@ const LayoutBaseDePagina = ({ children, titulo, barraDeFerramentas }) => {
                     whiteSpace="nowrap"
                     textOverflow="ellipses"
                     variant={smDown ? "h5" : mdDown ? "h4" : "h3"}
-                    color={colors.grey[100]}
                 >
                     {titulo}
                 </Typography>

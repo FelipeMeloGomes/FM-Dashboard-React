@@ -11,17 +11,11 @@ import { useSearchParams } from "react-router-dom";
 import { Box, CircularProgress, useTheme } from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
 
-// Theme
-import { tokens } from "../../theme/theme";
-
-
 // Components
 import LayoutBaseDePagina from "../../layouts/LayoutBaseDePagina";
-import FerramentasDaListagem from "../../components/ferramentas-da-listagem/FerramentasDaListagem";
 
 const ListaDeProjetos = () => {
     const theme = useTheme();
-    const colors = tokens(theme.palette.mode);
     const [data, setData] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
     const [searchParams, setSearchParams] = useSearchParams();
@@ -61,10 +55,6 @@ const ListaDeProjetos = () => {
             field: "phone",
             flex: 1,
         },
-        {
-            field: "website",
-            flex: 1,
-        },
     ];
 
     // busca nas colunas
@@ -73,45 +63,8 @@ const ListaDeProjetos = () => {
     }, [searchParams]);
 
     return (
-        <LayoutBaseDePagina titulo="Lista de Projetos">
-            <FerramentasDaListagem
-                mostrarInputBusca
-                mostrarBotao
-                textoDaBusca={busca}
-                aoMudarTextoDeBusca={(texto) =>
-                    setSearchParams({ busca: texto }, { replace: true })
-                }
-            />
-
-            <Box
-                m={1}
-                width="auto"
-                sx={{
-                    "& .MuiDataGrid-root": {
-                        border: "none",
-                    },
-                    "& .MuiDataGrid-cell": {
-                        borderBottom: "none",
-                    },
-                    "& .name-column--cell": {
-                        color: colors.greenAccent[300],
-                    },
-                    "& .MuiDataGrid-columnHeaders": {
-                        backgroundColor: colors.blueAccent[700],
-                        borderBottom: "none",
-                    },
-                    "& .MuiDataGrid-virtualScroller": {
-                        backgroundColor: colors.primary[400],
-                    },
-                    "& .MuiDataGrid-footerContainer": {
-                        borderTop: "none",
-                        backgroundColor: colors.blueAccent[700],
-                    },
-                    "& .MuiCheckbox-root": {
-                        color: `${colors.greenAccent[200]} !important`,
-                    },
-                }}
-            >
+        <LayoutBaseDePagina titulo="Base de Funcionários">
+            <Box m={1} width="auto">
                 {isLoading ? (
                     <Box
                         display="flex"
