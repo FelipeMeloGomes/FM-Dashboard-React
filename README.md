@@ -24,12 +24,6 @@ Iniciar o Front-End:
 npm run serve
 ```
 
-Iniciar o Back-End:
-
-```
-npm run backend
-```
-
 ## 🚀 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
@@ -37,7 +31,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 -   HTML e CSS.
 -   JavaScript.
 -   React.
--   Material-UI.
+-   Material-UI 5.
+-   Vite.
 
 ## 📚 Conceitos aprendidos no projeto
 
@@ -48,7 +43,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 -   Responsividade.
 -   Criação de componentes e reutilização.
 -   Framework React.
--   Libs do React como: - react-google-charts.
+-   Libs do React como: react-google-charts.
 -   react-countup.
 
 ## ✔ Atualizações
