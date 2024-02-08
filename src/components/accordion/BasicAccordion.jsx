@@ -20,9 +20,10 @@ const BasicAccordion = () => {
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Suspendisse malesuada lacus ex, sit amet blandit leo
-                        lobortis eget.
+                        Celulares são produtos altamente populares, com bilhões
+                        de vendas anuais globalmente, oferecendo comunicação,
+                        entretenimento e acesso à informação em um dispositivo
+                        portátil indispensável na vida moderna.
                     </Typography>
                 </AccordionDetails>
             </Accordion>
@@ -36,9 +37,9 @@ const BasicAccordion = () => {
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Suspendisse malesuada lacus ex, sit amet blandit leo
-                        lobortis eget.
+                        Notebooks são dispositivos portáteis fundamentais para
+                        trabalho, estudo e entretenimento, com milhões de
+                        unidades vendidas anualmente em todo o mundo.
                     </Typography>
                 </AccordionDetails>
             </Accordion>
@@ -52,9 +53,9 @@ const BasicAccordion = () => {
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Suspendisse malesuada lacus ex, sit amet blandit leo
-                        lobortis eget.
+                        Computadores são fundamentais para trabalho e
+                        entretenimento, com milhões de unidades vendidas
+                        anualmente em todo o mundo.
                     </Typography>
                 </AccordionDetails>
             </Accordion>
