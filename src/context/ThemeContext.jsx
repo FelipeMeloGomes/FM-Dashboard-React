@@ -21,7 +21,7 @@ export const useAppThemeContext = () => {
 };
 
 export const AppThemeProvider = ({ children }) => {
-    const [themeName, setThemeName] = useState("light");
+    const [themeName, setThemeName] = useState("Dark");
 
     const toggleTheme = useCallback(() => {
         setThemeName((oldThemeName) =>
