@@ -7,7 +7,7 @@ Um Dashboard para exibição de Dados de uma empresa. <br/>
 <br>
 
 <p align="center">
-  <img src="https://github.com/FelipeMelogomes/Fmburger/blob/main/preview.png" width="100%">
+  <img src="https://github.com/FelipeMeloGomes/FM-Dashboard-React/assets/85581543/f3c8cc35-38df-4243-ae03-4300bc790e35" width="100%">
 </p>
 
 ## ⚙️ Instalação dos pacotes essenciais.
