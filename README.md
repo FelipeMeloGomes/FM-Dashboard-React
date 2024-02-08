@@ -60,5 +60,7 @@ Melhorias implementadas:
 -   Melhorias na responsividade.
 -   Dados dinámicos via Api.
 -   Loading para usuários.
+-   Tema Escuro e Claro.
+-   Animações.
 
 ---
