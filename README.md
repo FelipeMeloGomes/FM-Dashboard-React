@@ -48,10 +48,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## ✔ Atualizações
 
-Melhorias implementadas:
-
--   Adição de novas carnes e molhos.
--   Implementação de um verificação nos inputs.
 -   Melhorias na responsividade.
 -   Dados dinámicos via Api.
 -   Loading para usuários.
